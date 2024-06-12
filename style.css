@@ -8,7 +8,7 @@ coloque nas sessões indicadas*/
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
+   --cor-de-link: #ffffff;
 }
 
 body {
@@ -42,14 +42,82 @@ https://en.bem.info/methodology/quick-start/*/
 /*Sección Menu*/
 
 section.menu{
-
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 15px;
+padding: 16px 8px;
+background-color: black;
+color: white;
+border-top: solid 10px;
+border-left: solid 10px;
+border-right: solid 10px;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+border-color: #f19611;
 }
+
+.menu__header{
+    font-size: 26px;
+    display: inline-flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.menu__img{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    padding-right: 10px;
+    
+}
+
+.menu__list{
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.menu__list__item:hover{
+    transition: 0.3s;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 
 /*Sección Title*/
 
 section.title{
+background-color: black;
+color: #ffffff;
+}
+
+div.title__div{
+    display: flex;
+    border-left: solid 10px;
+    border-right: solid 10px;
+    border-bottom: solid 10px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-color: #f19611;
+}
+
+.title__network{
+    display: flex;
+    justify-content: center;
 
 }
+
+.title__network__item{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+
 
 /*Sección About*/
 
