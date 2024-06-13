@@ -471,43 +471,38 @@ section.footer{
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
 
-
 /*Tablet*/
-@media (min-width: 768px) {
+@media (max-width: 1024px) {
 
-/* Menú */
+    /* Menú */
+    .menu__title{
+        font-size: 16px;
+    }
+    
+    .menu__list__item{
+        width: 78px;
+        font-size: 12px;
+        
+    }
+        
+    /*Skill*/
 
-/*title*/
+    .skills__box{
+        padding-right: 45px;
+    }
 
-/*Skills*/
+    .hobbies__box{
+        padding-right: 25px;
+    }
 
-/*Hobbies*/
-
-/*Formación Académica*/
-
-/*Experiencia Profesional*/
-
-}
-
-/*Mobile*/
-@media (min-width: 425px) {
-
-/*Menu*/
-
-/*Titulo*/
-
-/*Sección sobre mi*/
-
-/*Skills*/
-
-/*Hobbies*/
+   
+    
+    /*contacto*/
+    .formcontato__img{
+        width: 250px;
+        margin-left: 15px;
+    }
+    
+    }
+    
  
-/*Formación Académica*/
-
-/*Experiencia Profesional*/
-
- /*Contacto*/
-
-/*Footer*/
-
-}
