@@ -7,8 +7,8 @@ coloque nas sessões indicadas*/
 :root{
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #ffffff;
+   --cor-de-fundo: white;
+   --cor-de-link: black;
 }
 
 body {
@@ -47,18 +47,18 @@ justify-content: space-between;
 align-items: center;
 gap: 15px;
 padding: 16px 8px;
-background-color: black;
-color: white;
+background-color: #B2B8A3;
+color: black;
 border-top: solid 10px;
 border-left: solid 10px;
 border-right: solid 10px;
 border-top-left-radius: 15px;
 border-top-right-radius: 15px;
-border-color: #f19611;
+border-color: black;
 }
 
 .menu__header{
-    font-size: 26px;
+    font-size: 21px;
     display: inline-flex;
     gap: 5px;
     align-items: center;
@@ -69,8 +69,12 @@ border-color: #f19611;
     height: 30px;
     display: flex;
     justify-content: center;
-    padding-right: 10px;
+    padding: 0px 10px ;
     
+}
+
+.menu__title{
+    font-size: 21px;
 }
 
 .menu__list{
@@ -78,7 +82,6 @@ border-color: #f19611;
     justify-content: space-around;
     gap: 15px;
     font-weight: bold;
-    color: white;
 }
 
 .menu__list__item:hover{
@@ -91,8 +94,10 @@ border-color: #f19611;
 /*Sección Title*/
 
 section.title{
-background-color: black;
-color: #ffffff;
+background-color: #B2B8A3;
+color: black;
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
 }
 
 div.title__div{
@@ -102,13 +107,22 @@ div.title__div{
     border-bottom: solid 10px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    border-color: #f19611;
+    border-color: black;
+    padding: 0px 0px 0px 15px; 
+}
+
+.title__bio{
+    font-size: 18px;
+}
+
+.title__subsection{
+    font-size: 16px;
+    line-height: 150%;
 }
 
 .title__network{
     display: flex;
     justify-content: center;
-
 }
 
 .title__network__item{
@@ -117,44 +131,343 @@ div.title__div{
     padding: 5px;
 }
 
+.title__profile{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    box-shadow: #f19611 6px 0px 0px 10px;
+    margin: 0px 30px 0px 5px;
+}
 
 
 /*Sección About*/
 
 section.about{
+    display: flex;
+    padding: 32px;
+    background-color: #000;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.about__title{
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.about__container{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #B2B8A3;
+    border-radius: 15px;
+    border: solid 10px;
+    
+}
+
+.about__paragraph{
+    text-indent: 45px;
+}
+
+
+/*Seccion Soft Skills*/
+section.soft-skills{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
 
 }
 
-/*Sección Hobbies*/
+.soft-skills__title{
+    text-align: center;
+    font-size:  21px;
+    font-weight: bold;
+}
+
+.soft-skills__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 30px;    
+}
+
+.soft-skills__box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    background-color: white;
+    height: 60px;
+    width: 250px;
+    box-shadow: 0 8px 8px #fcb345;
+}
+
+.soft-skills__name{
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;  
+}
+
+/*Sección skills y Hobbies*/
+
+section.skills{
+    display: flex;
+    flex-direction: column;
+}
+.skills__title{
+    padding: 20px;
+    text-align: center;
+    font-size: 21px;
+}
+
+.skills__line{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+.skills__box{
+    border-style: none;
+    border-width: 1px;
+    background-color: white;
+    padding:15px;
+    width: 8%;
+    box-shadow: 0 8px 8px #fcb345;
+}
+
+.skills__box__ul{
+    padding-left: 20px;
+}
+
+.skills__name{
+    text-align: start;
+    padding-top: 10px;
+    font-weight: bold;
+}
 
 section.hobbies{
-    
+    display: flex;
+    flex-direction: column; 
+}
+.hobbies__title{
+    text-align: center;
+    padding: 20px;
+}
+.hobbies__line{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+.hobbies__box{
+    text-align: center;
+    border-style: none;
+    border-width: 1px;
+    background-color:white;
+    padding: 15px;
+    width: 8%;
+    box-shadow: 0 8px 8px #fcb345;
+}
+
+.hobbies__box__ul{
+    padding-left: 5px;
+}
+
+.hobbies__name{
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
 }
 
 /* Experiencia Académica*/
 
 section.academic{
-
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    background-color:#B2B8A3;
+    margin: 5px 0 5px 0;
+    border: solid 10px;
+    border-color: #fcb345;
+    border-radius: 15px;
 }
+.academic__title{
+    text-align: center;
+    padding: 20px;
+    font-size: 21px;
+    font-weight: bold;
+}
+.academic__courses{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.academic__courses__box{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.academic__courses__list{
+    width: 100%;
+}
+
+.academic__courses__item__img{
+      height: 165px; 
+}
+.academic__courses__item__title{
+    margin:5px 0 5px 0;
+}
+
 
 /* experiencia*/
 
-section.experience{
+.experience__section__title{
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 0px;
+}
 
+div.experience__box{
+    display: flex;
+}
+
+.experience__img{
+    width: 60%;
+    height: auto;
+    border: solid 3px #000;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+
+.experience__info-container{
+    display: flex;
+    margin-left: 20px;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+button.experiencia__botao--repo{
+    background-color: #fcb345;
+    border: solid 2px #000;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+button.experiencia__botao--repo:hover{
+    background-color: white;
+    border: solid 2px #000;
+}
+
+button.experience__botao--demo{
+    background-color: black;
+    border: solid 2px #fcb345;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+button.experience__botao--demo:hover{
+    background-color: #fcb345;
+    border: solid 2px #000;
 }
 
 /*Contacto*/
 
 section.formcontato{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin : 20px 10px 10px 10px;
+    background: #fcb345;
+    border-radius: 30px;
+}
 
+div.formcontato__text{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formcontato__input{
+    height: 20px;
+    background-color: #000;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.formcontato__textarea{
+    background-color: #000;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+input::placeholder{
+    color: white;
+}
+
+textarea::placeholder{
+    color: white;
+}
+
+.errorMensaje{
+    color: white;
+}
+button.formcontato__botao{
+    background-color: #fff;
+    border: solid 2px #000;
+    width: 200px;
+    height: auto;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black;
+}
+
+button.formcontato__botao:hover{
+    background-color: #000;
+    border: solid 2px #fff;
+    color: #EAEEEF;
 }
 
 /*footeer*/
 
 section.footer{
-   
-}
+    text-align: center;
+    font-size:18px;
+    background-color:#000;
+    color: white;
+    padding: 20px;
+    height: 70px;
+ } 
+ 
+ .link_footer{
+    color: #fcb345;
+ }
 
+ .link_footer:hover{
+    color: blue;
+ }
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
 
