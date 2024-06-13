@@ -518,6 +518,7 @@ Utiliza las referencias de los breakpoints @media abajo */
         section.menu{
             display: flex;
             flex-direction: column;
+            background-color: #B2B8A3;
         }
         .menu__title{
             font-size: 16px;
@@ -541,6 +542,9 @@ Utiliza las referencias de los breakpoints @media abajo */
 
         
         /*Titulo*/
+        section.title{
+            background-color: #B2B8A3;
+        }
 
         .title__div{
             margin-top: -1px;
@@ -570,6 +574,10 @@ Utiliza las referencias de los breakpoints @media abajo */
         }
         
         /*Sección sobre mi*/
+
+        .about__container{
+            background-color: #B2B8A3;
+        }
         
         section.about{
             padding: 1px;
@@ -591,7 +599,10 @@ Utiliza las referencias de los breakpoints @media abajo */
       
         /*Formación Académica*/
         
-       
+        section.academic{
+            background-color: #B2B8A3;
+        }
+
         /*Experiencia Profesional*/
         
         
