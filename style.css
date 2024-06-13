@@ -505,4 +505,146 @@ Utiliza las referencias de los breakpoints @media abajo */
     
     }
     
+
+    /*Mobile*/
+
+
+    @media (max-width: 768px) {
+    
  
+
+        /* Menú */
+
+        section.menu{
+            display: flex;
+            flex-direction: column;
+        }
+        .menu__title{
+            font-size: 16px;
+        }
+        
+        .menu__list{
+            flex-direction: row; 
+            flex-wrap: wrap;
+            padding: 0px 15px;
+            justify-content: center;
+            font-size: 16px;
+        }
+
+        .menu__list__item{
+            border: solid 1px;
+            text-align: center;
+            padding: 5px 0px;
+            border-radius: 15px;
+            background-color: #fcb345;
+        }
+
+        
+        /*Titulo*/
+
+        .title__div{
+            margin-top: -1px;
+        }
+        
+             
+        h2.title__bio, h3.title__subsection{
+            font-size: 14px;
+        }
+        
+        .title__profile{
+            width: 100px;
+            height: 100px;
+            margin-top: 45px;
+        }
+        
+        div.title__network{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: right;        
+        }
+
+        .title__network__item{
+            font-size: 12px;
+            font-weight: bold;
+            
+        }
+        
+        /*Sección sobre mi*/
+        
+        section.about{
+            padding: 1px;
+            line-height: 1.5;
+        }
+        
+        /*Skills*/
+       
+        .skills__box{
+            padding-right: 80px;
+        }
+
+        /*Hobbies*/
+      
+        .hobbies__box {
+            padding-right: 55px;
+        }
+        
+      
+        /*Formación Académica*/
+        
+       
+        /*Experiencia Profesional*/
+        
+        
+        div.experience__box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .experience__img{
+            width: 330px;
+            height: 150px;
+        } 
+        
+        h2.experience__title{
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 1px;
+        }
+
+        h3.experience__text{
+            font-size: 18px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        
+        .about__paragraph_experience{
+            font-size: 16   px;
+        }
+        
+        div.experience__description{
+            align-self: center;
+            padding: 20px 1px;
+        }
+        
+         /*Contacto*/
+         section.formcontato{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            
+        }
+        
+        div.formcontato__text{
+            font-size: 12px;
+        }
+        
+        .formcontato__img{
+            width: 300px;
+            height: auto;
+            margin-top: 15px;
+        }
+  
+}
