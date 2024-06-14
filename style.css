@@ -420,7 +420,15 @@ div.formcontato__text{
     margin-top: 10px;
 }
 
+input{
+    color: white;
+}
+
 input::placeholder{
+    color: white;
+}
+
+textarea{
     color: white;
 }
 
