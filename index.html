@@ -253,13 +253,13 @@
     </section>
 
         <!-- Sección de Contacto -->
-        <section class="formcontato" id="contacto" action="https://formsubmit.co/gustavo.systeme.io@gmail.com" method="POST">
+        <section class="formcontato" id="contacto" method="POST">
             <div  class="formcontato__contacto">
                 <div class="formcontato__text">
                     <h2 class="formcontato__title">Contacto</h2>
                     <h3 class="formcontato__subtext">Si quisieras contactarme</h3>
                     <h3 class="formcontato__subtext">Completa el siguiente formulario y me pondré en contacto contigo lo antes posible. </h3>
-                    <form class="formcontato__form" name="form">
+                    <form class="formcontato__form" name="form" action="https://formsubmit.co/gustavo.systeme.io@gmail.com">
                         <input class="formcontato__input" type="text" id="nombre" name="nombre" placeholder="Nombre">
                         <span id="errorNombre" class="errorNombre" style="display: none;">El campo nombre no puede estar vacío.</span>
                         <input class="formcontato__input" type="email" id="email" name="email" placeholder="E-mail">
@@ -269,6 +269,8 @@
                         <textarea class="formcontato__textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Ingresa un mensaje"></textarea>
                         <span id="errorMensaje" class="errorMensaje" style="display: none;">Ingresa un mensaje de mínimo 10 y máx 300 caracteres</span>
                         <button type="submit" class="formcontato__botao" id="botonEnviar" disabled>Enviar mensaje</button>
+                        <input type="hidden" name="_next" value="https://florez89.github.io/portfolio/">
+                        <input type="hidden" name="_captcha" value="false">
                     </form>
                 </div>
             </div>

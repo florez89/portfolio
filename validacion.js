@@ -51,7 +51,7 @@ const validarFormulario = (e) => {
        break;
        case "email":
             if (emailValido) {
-                e.target.style.borderColor = 'green';
+                e.target.style.borderColor = 'yellow';
                 errorEmail.style.display = 'none';
                 return true; // El recuadro se pone verde de estar ingresado de manera correcta la informacion
             } else {
