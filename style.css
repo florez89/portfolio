@@ -437,7 +437,7 @@ textarea::placeholder{
 }
 
 .errorMensaje{
-    color: white;
+    color: black;
 }
 button.formcontato__botao{
     background-color: #fff;
